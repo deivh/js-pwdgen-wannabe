@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Esercizio NomeCognomeData</title>
 </head>
 <body>
     <div class="container">  
-        <span class="nomecognome"></span>
+        <p id="nomecognome"></p>
     </div>
     <script>
-        
+        var nome= prompt("Inserisci il tuo nome");
+        console.log('nome' , nome);
+        var cognome= prompt("Inserisci il tuo cognome");
+        console.log('cognome' , cognome);
+        var colore= prompt("Qual'è il tuo colore preferito?");
+        console.log('colore preferito' , colore);
+        document.getElementById('nomecognome').innerHTML = nome + cognome + colore + 21;
     </script>
 </body>
 </html>
